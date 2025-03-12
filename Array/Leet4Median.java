@@ -24,20 +24,29 @@ public class Leet4Median {
            
         }
 // for remaining element 
-        while(i<arr1.length){
+        while(i< arr1.length){
             mergeArr[k++]=arr1[i++];
         }
         while(j< arr2.length){
             mergeArr[k++]=arr2[j++];
         }
            
-        
+        int solution = mergeArr.length / 2;
+        double median;
 
-        System.out.println(Arrays.toString(mergeArr));
+      //  System.out.println(Arrays.toString(mergeArr));
+      if(mergeArr.length % 2==0){
+        solution = mergeArr.length /2;
+        median=mergeArr[solution-1];
+
+      }
+      else{
+        median=mergeArr[solution];
+      }
 
         
         
-
+    System.out.println(median);
     }
     
 }
