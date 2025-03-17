@@ -1,24 +1,24 @@
-import java.util.*;
-public class Leet27Remove {
-    public static void main(String[] args) {
-        int num[]={5,2,5,2,5,9,5,7,3,4};
-        int val=5;
-        removeElement(num,val);
-    }
-    public static void removeElement(int num[],int val){
-        int index=0;
-        int k=0;
-        for(int i:num){
-            if(num[i]!=val){
-                num[index]=num[i];
-                index++;
-                k++;
-            }
+// import java.util.Arrays;
 
-        }
-        System.out.println(k);
-        System.out.println(Arrays.toString(num));
-
-    }
+// class Leet27Remove {
+//     public static void main(String[] args) {
+//         int nums[]= {3,2,2,3};
+//         int val=3;
+//         removeElement(nums, val);
     
-}
+//     }
+//     public static void removeElement(int[] nums, int val) {
+//         int output[]=new int[nums.length];
+//         int index=0;
+//         for(int i=0;i<nums.length;i++){
+//             if(nums[i]!=val){
+//                 output[index]=nums[i];
+//                 index++;
+
+//             }
+           //  System.arraycopy(output, 0, nums, 0, count);
+//         }
+//         System.out.println(Arrays.toString(nums));
+//     }
+// }
+
